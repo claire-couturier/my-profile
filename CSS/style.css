@@ -2,10 +2,11 @@
 body {
     font-family: 'Poppins', Arial, sans-serif; /* Updated font */
     text-align: center;
-    background-color: #fbe4f4; /* Soft pink background */
+    background: linear-gradient(135deg, #fbe4f4, #ffb3d9); /* Softer gradient background */
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    box-sizing: border-box; /* Add this to handle padding and borders better */
 }
 
 /* Import Google Font */
@@ -13,7 +14,8 @@ body {
 
 /* Centering Container */
 .container {
-    width: 700px;
+    width: 90%; /* Use percentage for responsive design */
+    max-width: 700px; /* Limit the maximum width */
     margin: 40px auto;
     padding: 20px;
     background: #fff;
@@ -172,11 +174,6 @@ p {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05); /* Subtle shadow for text depth */
 }
 
-/* Gradient Background for Body */
-body {
-    background: linear-gradient(135deg, #fbe4f4, #ffb3d9); /* Softer gradient background */
-}
-
 /* Fun Emoji Styling */
 h1::before, h2::before, h3::before {
     content: "✨ "; /* Add sparkle emoji before main headings */
@@ -196,13 +193,15 @@ h1::before, h2::before, h3::before {
 /* Responsive Design */
 @media (max-width: 960px) {
   .container {
-    width: 700px;
+    width: 90%; /* Percentage-based width for better responsiveness */
+    max-width: 700px;
   }
 }
 
 @media (max-width: 720px) {
   .container {
-    width: 500px;
+    width: 90%; /* Percentage-based width */
+    max-width: 500px;
   }
   .card-white {
     padding: 20px;
@@ -211,7 +210,8 @@ h1::before, h2::before, h3::before {
 
 @media (max-width: 540px) {
   .container {
-    width: 300px;
+    width: 90%; /* Percentage-based width */
+    max-width: 300px;
   }
   .profile-picture {
     width: 120px;
